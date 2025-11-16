@@ -16,30 +16,28 @@ import ScrollToTop from '@/components/ScrollToTop'
 
 export default function PageWrapper() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
-  const [isModelDayBooking, setIsModelDayBooking] = useState(false)
   const [assessmentData, setAssessmentData] = useState<any>(null)
 
-  const handleBookingClick = (isModelDay = false) => {
-    setIsModelDayBooking(isModelDay)
+  const handleBookingClick = () => {
     setIsBookingModalOpen(true)
   }
 
   return (
     <>
       <ScrollToTop />
-      <Navigation onBookingClick={() => handleBookingClick(false)} />
+      <Navigation onBookingClick={handleBookingClick} />
       <main className="overflow-hidden">
-        <PremiumHero onBookingClick={() => handleBookingClick(false)} />
+        <PremiumHero onBookingClick={handleBookingClick} />
         <AssessmentTool
-          onBookingClick={() => handleBookingClick(false)}
+          onBookingClick={handleBookingClick}
           onAssessmentComplete={(data) => setAssessmentData(data)}
         />
-        <AboutSection onBookingClick={() => handleBookingClick(false)} />
-        <PremiumTreatments onBookingClick={() => handleBookingClick(false)} />
+        <AboutSection onBookingClick={handleBookingClick} />
+        <PremiumTreatments onBookingClick={handleBookingClick} />
         <ResultsGallery onBookingClick={handleBookingClick} />
         <ReviewsSection />
-        <FAQ onBookingClick={() => handleBookingClick(false)} />
-        <CTASection onBookingClick={() => handleBookingClick(false)} />
+        <FAQ onBookingClick={handleBookingClick} />
+        <CTASection onBookingClick={handleBookingClick} />
       </main>
       <Footer />
       
@@ -48,12 +46,11 @@ export default function PageWrapper() {
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
         assessmentData={assessmentData}
-        isModelDay={isModelDayBooking}
       />
 
       {/* Floating Book Now Button */}
       <button
-        onClick={() => handleBookingClick(false)}
+        onClick={handleBookingClick}
         className="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-full font-medium shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 flex items-center group"
       >
         <span className="mr-2">Book Now</span>
