@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://morpheus8bedford.co.uk/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://morpheus8bedford.co.uk/images/home1.jpg</image:loc>
+      <image:caption>Claire Emmerson - Registered Nurse &amp; Morpheus8 Specialist at Clarity Cosmetics Bedford</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://morpheus8bedford.co.uk/images/treatment.jpg</image:loc>
+      <image:caption>Clarity Cosmetics Treatment Room - CQC Registered Clinic in Bedford</image:caption>
+    </image:image>
+  </url>
+</urlset>

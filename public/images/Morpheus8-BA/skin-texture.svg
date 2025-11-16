@@ -1,0 +1,73 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f2f7f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e5efe9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#588068;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4d7059;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGradient)"/>
+
+  <!-- Pattern overlay -->
+  <g opacity="0.03">
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#588068" stroke-width="1"/>
+    </pattern>
+    <rect width="800" height="800" fill="url(#grid)"/>
+  </g>
+
+  <!-- Center circle -->
+  <circle cx="400" cy="340" r="100" fill="url(#accentGradient)" opacity="0.1"/>
+  <circle cx="400" cy="340" r="80" fill="none" stroke="url(#accentGradient)" stroke-width="2" stroke-dasharray="5,5">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 400 340"
+      to="360 400 340"
+      dur="20s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Icon -->
+  <g transform="translate(400, 340)">
+    <path d="M -30 -20 L -30 20 L 30 20 L 30 -20 Z M -20 -10 L 20 -10 L 20 10 L -20 10 Z"
+          fill="none" stroke="#588068" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="3" fill="#588068"/>
+  </g>
+
+  <!-- Text -->
+  <text x="400" y="480" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700"
+        fill="#588068" text-anchor="middle">
+    COMING SOON
+  </text>
+
+  <text x="400" y="520" font-family="Arial, Helvetica, sans-serif" font-size="18"
+        fill="#6d8776" text-anchor="middle">
+    Before & After Results
+  </text>
+
+  <text x="400" y="550" font-family="Arial, Helvetica, sans-serif" font-size="14"
+        fill="#8a9d90" text-anchor="middle">
+    Real patient transformations
+  </text>
+
+  <!-- Decorative elements -->
+  <circle cx="250" cy="200" r="4" fill="#588068" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="220" r="3" fill="#588068" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="600" r="5" fill="#588068" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="580" r="4" fill="#588068" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
