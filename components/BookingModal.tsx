@@ -96,9 +96,8 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
           {/* Widget wrapper with proper padding */}
           <div className="relative h-full w-full p-4 sm:p-6 overflow-auto">
             <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 min-h-full">
-              {/* TODO: Replace this URL with the specific bladder leak consultation calendar */}
               <iframe
-                src="https://link.leadballoon.co.uk/widget/booking/T2xN5Qup3pc5YbWkh6Zf"
+                src="https://link.morpheus8bedford.co.uk/widget/booking/T2xN5Qup3pc5YbWkh6Zf"
                 style={{
                   width: '100%',
                   minHeight: '600px',
@@ -107,7 +106,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                   overflow: 'hidden'
                 }}
                 scrolling="no"
-                id="bladder_leak_booking_calendar"
+                id="T2xN5Qup3pc5YbWkh6Zf_1763324132016"
                 title="Bladder Leak Consultation Booking Calendar"
                 sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
                 allow="payment 'src'; fullscreen 'src'"
